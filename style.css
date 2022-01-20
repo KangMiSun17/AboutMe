@@ -190,6 +190,22 @@ h2, h3{
 }
 
 @media screen and (max-width : 1000px) {
+    .main_p{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .goal_describe{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .navbar {
         flex-direction: column;
         align-items: flex-start;
