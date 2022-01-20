@@ -16,6 +16,8 @@
 
 header {
     margin: 0 auto;
+    position: fixed;
+    width: 100%;
 }
 
 body {
@@ -39,28 +41,25 @@ a{
 .home_data{
     font-size: var(--middel-size);
     display: flex;
-    align-items: center;
+    margin: 0 auto;
+    width: 50%
 }
 
-.home_data h1{
-    color: var(--title-color);
-}
-
-h2{
-    color: var(--title-color);
-    margin : 0 auto;
-}
-
-.home_describe {
-    margin-left: 50px;
-}
-
-.me_img{
-    justify-content: flex-end;
+.main{
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
 }
 
 .goal_data{
     font-size: var(--middel-size);
+    margin: 50px auto;
+    margin-bottom: 0;
+    width: 50%
+}
+
+.home_data h1{
+    color: var(--title-color);
 }
 
 .skill_data{
@@ -71,8 +70,48 @@ h2{
     font-size: var(--middel-size);
 }
 
+h2, h3{
+    color: var(--title-color);
+}
+
+.home_describe {
+    margin-left: 50px;
+}
+
+.goal_describe {
+    font-size: var(--middel-size);
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    margin-bottom: 0;
+}
+
+.goal_describe p {
+    margin-right: 50px;
+}
+
+.skill_describe {
+    font-size: var(--middel-size);
+    display: flex;
+    justify-content: center;
+    margin:50px;
+}
+
+.title_sub{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
 .me_img {
+    justify-content: flex-end;
     width: var(--img-width);
+    border-radius: 10px;
+}
+
+.me2_img{
+    width: var(--img-width);
+    justify-content: flex-end;
     border-radius: 10px;
 }
 
@@ -83,6 +122,7 @@ h2{
     max-width: 980px;
     background-color: var(--background-color);
     padding: 8px 15px;
+    margin: 0 auto;
 }
 
 .name_logo {
@@ -92,10 +132,6 @@ h2{
 
 .navbar_logo {
     font-size: 50px;
-}
-
-.navbar_logo:hover {
-    color: var(--accent-color);
 }
 
 .navbar_menu {
@@ -125,6 +161,7 @@ h2{
 .favorite_img{
     width: var(--img-width);
     height: var(--img-height);
+    border-radius: 10px;
 }
 
 .navbar_toogleBtn {
@@ -136,7 +173,7 @@ h2{
 }
 
 .navbar_toogleBtn:hover{
-    color : #C09BD8;
+    color : var(--accent-color);
 }
 
 #dark {
@@ -152,7 +189,7 @@ h2{
     color: var(--background-color);
 }
 
-@media screen and (max-width : 800px) {
+@media screen and (max-width : 1000px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -178,5 +215,21 @@ h2{
 
     .navbar_menu.active {
         display: flex;
+    }
+
+    .home_data{
+        width: 100%;
+    }
+
+    .goal_data{
+        width: 100%;
+    }
+
+    .skill_data{
+        width: 100%;
+    }
+
+    .favorite_data{
+        width: 100%;
     }
 }
