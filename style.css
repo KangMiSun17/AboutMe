@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     margin: 0;
     font-family: 'Dongle';
@@ -32,10 +37,57 @@ a{
     padding: 8px 12px;
 }
 
+.navbar_list:hover {
+    color : #C09BD8;
+}
+
 .theme_change{
     display: flex;
+    font-size : 30px;
+    padding-left: 0;
+}
+
+.theme_change:hover{
+    color : #C09BD8;
 }
 
 .favorite_img{
     width: 200px;
+}
+
+.navbar_toogleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    top: 25px;
+    font-size: 40px;
+}
+
+.navbar_toogleBtn:hover{
+    color : #C09BD8;
+}
+
+@media screen and (max-width : 935px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .theme_change{
+        position: absolute;
+        right: 90px;
+        top: 25px;
+        font-size: 40px;
+    }
+    
+    .navbar_toogleBtn{
+        display: block;
+    }
 }
