@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 8px 15px;
+}
+
+.navbar_logo {
+    font-size: 20px;
+}
+
+.navbar_menu {
+    display: flex;
+    padding-left: 10px;
+    list-style: none;
+}
+
+.navbar_menu {
+    padding: 8px 12px;
+}
+
+.favorite_img{
+    width: 200px;
+}
+
+a{
+    text-decoration: none;
+    color: #1d032c;
+}
+
+ul {
+    text-decoration: none;
+}
