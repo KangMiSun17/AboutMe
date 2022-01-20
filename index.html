@@ -15,7 +15,7 @@
     <title>강미선</title>
     <script src="main.js" defer></script>
 </head>
-<body>
+<body class="body">
     <header>
         <nav class="navbar">
             <div class="navbar_logo">
@@ -33,9 +33,10 @@
                 <li>
                     <a href="#favorite" class="navbar_list">Favorite</a></li>
             </ul>
-            <div class=theme_change>
+            <!--DARK_MODE-->
+            <button onclick="myFunction()" id="dark">
                 <i class="uil uil-moon"></i>
-            </div>
+            </button>
             <a href="#" class="navbar_toogleBtn">
                 <i class="uil uil-apps"></i>
             </a>
@@ -45,41 +46,45 @@
         <!--==========HOME===========-->
         <section id="home">
             <div class="home_data">
-                <h1>안녕하세요, 강미선입니다.</h1>
-                <h3>프론트엔드 개발자</h3>
-                <p>
-                    AI 트랙이 저를 얼마나 성장시켜줄지 기대됩니다.
-                    <br>
-                    다른 레이서 분들과 같이 성장하고 각자 원하는
-                    <br>
-                    목표를 이뤘으면 좋겠어요.
-                    <br>
-                    모두 서로 도우면서 완주했으면 좋겠습니다.
-                    <br>
-                    화이팅!! 🙂
-                </p>
+                <img src="./img/me.jpg" alt="me img" class="me_img">
+                <div class="home_describe">
+                    <h1>안녕하세요, 강미선입니다.</h1>
+                    <h3>프론트엔드 개발자</h3>
+                    <p>
+                        AI 트랙이 저를 얼마나 성장시켜줄지 기대됩니다.
+                        <br>
+                        다른 레이서 분들과 같이 성장하고 각자 원하는
+                        <br>
+                        목표를 이뤘으면 좋겠어요.
+                        <br>
+                        모두 서로 도우면서 완주했으면 좋겠습니다.
+                        <br>
+                        화이팅!! 🙂
+                    </p>
+                </div>
             </div>
         </section>
         <!--============GOAL===========-->
         <section id="goal">
             <h2>Goal</h2>
             <span>관심 직무 및 앞으로의 목표</span>
-                <p class="goal_data">
-                    엘리스 AI 트랙을 통해
-                    <br>
-                    여러가지 언어의 기초 개념을 쌓고,
-                    <br>
-                    다양한 프로젝트를 수행하면서 협업 능력을 키우고,
-                    <br>
-                    프론트엔드 개발자로 일하고 싶습니다.
-                </p>
+            <p class="goal_data">
+                엘리스 AI 트랙을 통해
+                <br>
+                여러가지 언어의 기초 개념을 쌓고,
+                <br>
+                다양한 프로젝트를 수행하면서 협업 능력을 키우고,
+                <br>
+                프론트엔드 개발자로 일하고 싶습니다.
+            </p>
+            <img arc="./img/me2.jpg" alt="me img" class="me_img">
         </section>
         <!--=============SKILL===========-->
         <section id = "skill">
             <h2>Skill</h2>
-            <span>관심 직무 및 앞으로의 목표</span>
+            <span>관심 분야 또는 기술</span>
             <div>
-                <p>
+                <p class="skill_data">
                     엘리스 AI 트랙을 통해
                     <br>
                     여러가지 언어의 기초 개념을 쌓고,
@@ -99,7 +104,7 @@
                 <img src="./img/LeagueOfLegends.jpg" alt="game image" class="favorite_img">
                 <div>
                     <h3>게임</h3>
-                    <p>
+                    <p class="favorite_data">
                         제 취미는 게임이에요.
                         <br>
                         MMO RPG 장르 제외하고 좋아하고,
@@ -118,7 +123,7 @@
                 <img src="./img/ez.jpg" alt="animal image" class="favorite_img">
                 <div>
                     <h3>반려동물</h3>
-                    <p>
+                    <p class = "favorite_data">
                         저는 강아지랑 고양이를 키워요.
                         <br>
                         고양이 이름은 아리고, 😺
@@ -134,7 +139,7 @@
                 <img src="./img/Sutak.jpg" alt="bj image" class="favorite_img">
                 <div>
                     <h3>BJ수탉</h3>
-                    <p>
+                    <p class="favorite_data">
                         저는 수탉 영상을 보는 걸 좋아해요.
                         <br>
                         욕도 안하고 말도 재밌게 해서 좋아요.

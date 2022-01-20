@@ -6,6 +6,7 @@ toggleBtn.addEventListener('click', () => {
     menu.classList.toggle('active');
 });
 
-theme_change.addEventListener('click', () => {
-    theme_change.classList.toggle('active');
-});
+function myFunction(){
+    let body = document.body;
+    body.classList.toggle("dark_mode");;
+}
