@@ -8,5 +8,5 @@ toggleBtn.addEventListener('click', () => {
 
 function myFunction(){
     let body = document.body;
-    body.classList.toggle("dark_mode");;
+    body.classList.toggle("dark_mode");
 }

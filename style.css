@@ -21,7 +21,7 @@ header {
 }
 
 body {
-    margin: 0 30px;
+    margin: 0 auto;
     font-family: 'Dongle';
     font-size: 40px;
     background-color: var(--background-color);
@@ -94,7 +94,8 @@ h2, h3{
     font-size: var(--middel-size);
     display: flex;
     justify-content: center;
-    margin:50px;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 .title_sub{
@@ -119,10 +120,10 @@ h2, h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 980px;
     background-color: var(--background-color);
+    max-width: 980px;
     padding: 8px 15px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 .name_logo {
@@ -163,6 +164,9 @@ h2, h3{
     height: var(--img-height);
     border-radius: 10px;
 }
+#favorite_img{
+    margin-top: 0;
+}
 
 .navbar_toogleBtn {
     display: none;
@@ -176,6 +180,31 @@ h2, h3{
     color : var(--accent-color);
 }
 
+.favorite_game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.favorite_animal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.favorite_bj{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.favorite_describe{
+    margin-left: 50px;
+}
+
 #dark {
     border: none;
     outline: none;
@@ -187,6 +216,15 @@ h2, h3{
 .dark_mode{
     background-color: var(--text-color);
     color: var(--background-color);
+}
+
+#footer{
+    background-color: (var(--accent-color));
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
 
 @media screen and (max-width : 1000px) {
@@ -204,6 +242,10 @@ h2, h3{
     .goal_describe{
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .goal_describe p{
+       margin-bottom: 10px;
     }
 
     .navbar {
@@ -247,5 +289,28 @@ h2, h3{
 
     .favorite_data{
         width: 100%;
+    }
+
+    .favorite_animal{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .favorite_describe{
+        margin-top: 30px;
+    }
+
+    .favorite_game{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .favorite_bj{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer{
+        width:100%;
     }
 }
