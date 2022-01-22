@@ -20,6 +20,10 @@ header {
     width: 100%;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0 auto;
     font-family: 'Dongle';
@@ -96,6 +100,35 @@ h2, h3{
     justify-content: center;
     margin: 0 auto;
     margin-top: 50px;
+}
+
+.skill_list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 30%;
+    margin-top: 50px;
+}
+
+.HTML{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.CSS{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.JS{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.REACT{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title_sub{
